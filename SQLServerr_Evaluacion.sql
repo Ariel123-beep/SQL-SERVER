@@ -46,6 +46,34 @@ values(89893435,'Iveth Elizabeth','Orellana Moralez','San Salvador', 'Nejapa','F
 insert into Pacientes(Numero_Seguridad_Social, Nombres_Paciente,Apellidos_Paciente,Provincia, Domicilio,Sexo, Num_Historial_Clinico, Codigo_Postal, observaciones)
 values(55665577,'Karla Mariana','Guzman Ayala', 'san Salvador','Guazapa','Femenino', 89776566, 1555, 'estado normal');
 
+Select* from Medicos
+
+Create table Medicos(
+Cod_Medico int primary key identity(1,1),
+Nombres_Medico varchar(30),
+Apellidos_Medico varchar(30),
+Numero_Colegiado Varchar(50) unique,
+Observaciones varchar(30)
+)
+
+insert into medicos(Nombres_Medico,Apellidos_Medico, Numero_Colegiado, observaciones)
+values('Joel', 'Martínez', 25346789,'ninguna');
+
+insert into medicos(Nombres_Medico,Apellidos_Medico, Numero_Colegiado, observaciones)
+values('Angel', 'López', 21122211, 'ninguna');
+
+insert into medicos(Nombres_Medico,Apellidos_Medico, Numero_Colegiado, observaciones)
+values('Gerardo', 'Gómez', 12321256,'ninguna');
+
+insert into medicos(Nombres_Medico,Apellidos_Medico, Numero_Colegiado, observaciones)
+values('Rosa', 'Méndez', 11215161 , 'ninguna');
+
+insert into medicos(Nombres_Medico,Apellidos_Medico, Numero_Colegiado, observaciones)
+values('Marlon', 'Cruz', 99887766 , 'ninguna');
+
+insert into medicos(Nombres_Medico,Apellidos_Medico, Numero_Colegiado, observaciones)
+values('Eriberto', 'Cañas', 34557766,'ninguna');
+
 
 
 
@@ -116,32 +144,6 @@ values ('San Salvador', 2, 2, 'necesita atencion');
 
 
 Select* from Medicos
-
-Create table Medicos(
-Cod_Medico int primary key identity(1,1),
-Nombres_Medico varchar(30),
-Apellidos_Medico varchar(30),
-Numero_Colegiado Varchar(50) unique,
-Observaciones varchar(30)
-)
-
-insert into medicos(Nombres_Medico,Apellidos_Medico, Numero_Colegiado, observaciones)
-values('Joel', 'Martínez', 25346789,'ninguna');
-
-insert into medicos(Nombres_Medico,Apellidos_Medico, Numero_Colegiado, observaciones)
-values('Angel', 'López', 21122211, 'ninguna');
-
-insert into medicos(Nombres_Medico,Apellidos_Medico, Numero_Colegiado, observaciones)
-values('Gerardo', 'Gómez', 12321256,'ninguna');
-
-insert into medicos(Nombres_Medico,Apellidos_Medico, Numero_Colegiado, observaciones)
-values('Rosa', 'Méndez', 11215161 , 'ninguna');
-
-insert into medicos(Nombres_Medico,Apellidos_Medico, Numero_Colegiado, observaciones)
-values('Marlon', 'Cruz', 99887766 , 'ninguna');
-
-insert into medicos(Nombres_Medico,Apellidos_Medico, Numero_Colegiado, observaciones)
-values('Eriberto', 'Cañas', 34557766,'ninguna');
 
 
 select* from Contacto
